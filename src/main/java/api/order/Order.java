@@ -1,6 +1,4 @@
-package ru.yandex.praktikum;
-
-import java.util.List;
+package api.order;
 
 public class Order {
     public String firstName;
@@ -13,8 +11,7 @@ public class Order {
     public String comment;
     public String[] color;
 
-    public Order(String firstName, String lastName, String address, String metroStation,
-                 String phone, Number rentTime, String deliveryDate, String comment, String[] color) {
+    public Order(String firstName, String lastName, String address, String metroStation, String phone, Number rentTime, String deliveryDate, String comment, String[] color) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -26,7 +23,7 @@ public class Order {
         this.color = color;
     }
 
-    public Order(){
+    public Order() {
     }
 
     public String getFirstName() {
